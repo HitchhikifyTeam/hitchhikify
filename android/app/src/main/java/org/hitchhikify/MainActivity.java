@@ -2,15 +2,12 @@ package org.hitchhikify;
 
 import android.net.Uri;
 import android.os.Bundle;
-import android.support.design.widget.FloatingActionButton;
-import android.support.design.widget.Snackbar;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
 import android.view.View;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.widget.Button;
-import android.widget.ImageView;
 import android.widget.TextView;
 import android.widget.Toast;
 
@@ -29,7 +26,12 @@ public class MainActivity extends AppCompatActivity {
         mStartNewTripButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Toast.makeText(getApplicationContext(), "Start new trip", Toast.LENGTH_LONG).show();
+                int distanceTravelled = 70;
+                int carsTravelled = 7;
+                int tripDuration = 21;
+                int averageSpeed = 34;
+                startActivity(WaitingActivity.buildIntent(MainActivity.this,
+                        distanceTravelled, carsTravelled, tripDuration, averageSpeed, 30));
             }
         });
         TextView editProfileTextView = (TextView) findViewById(R.id.edit_profile_text_view);
@@ -41,8 +43,8 @@ public class MainActivity extends AppCompatActivity {
         });
         CircleImageView circleImageView = (CircleImageView) findViewById(R.id.profile_image);
         circleImageView.setImageURI(Uri.parse("https://scontent-mxp1-1.xx.fbcdn.net/v/t1.0-1/p160x160/23795485_1795370397162891_851702792683737565_n.jpg?oh=59ee48dac48f21cc37bedacc5423370c&oe=5ADB100A"));
-        Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
-        toolbar.setTitle("Hi there");
+        Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);        toolbar.setTitle("Hi there");
+        toolbar.setTitle("");
         setSupportActionBar(toolbar);
     }
 

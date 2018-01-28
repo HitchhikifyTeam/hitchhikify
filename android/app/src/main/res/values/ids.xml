@@ -1,5 +1,3 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <item name="start_new_trip_button" type="id" />
-    <item name="edit_profile_text_view" type="id">Edit Profile</item>
 </resources>

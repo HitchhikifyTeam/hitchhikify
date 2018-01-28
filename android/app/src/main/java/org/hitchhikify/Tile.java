@@ -19,6 +19,8 @@ public class Tile extends LinearLayout {
     private Drawable mDrawable;
     private String mText;
 
+    private TextView textView;
+
     public Tile(Context context, @Nullable AttributeSet attrs) {
         super(context, attrs);
         init(context, attrs);
@@ -38,9 +40,15 @@ public class Tile extends LinearLayout {
             typedArray.recycle();
         }
 
-        TextView textView = (TextView) rootView.findViewById(R.id.tile_text_view);
+        textView = (TextView) rootView.findViewById(R.id.tile_text_view);
         textView.setText(mText);
         ImageView imageView = (ImageView) rootView.findViewById(R.id.tile_image_view);
         imageView.setImageDrawable(mDrawable);
+    }
+
+    public void setText(String text) {
+        textView.setText(text);
+        invalidate();
+        requestLayout();
     }
 }
