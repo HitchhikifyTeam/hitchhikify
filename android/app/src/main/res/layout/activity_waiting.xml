@@ -52,7 +52,7 @@
         android:columnCount="2"
         grid:alignmentMode="alignBounds">
 
-        <org.hitchhikify.Tile
+        <org.hitchhikify.ui.Tile
             android:id="@+id/waiting_distance_travelled_tile"
             android:layout_rowWeight="1"
             android:layout_columnWeight="1"
@@ -60,7 +60,7 @@
             android:layout_height="0dp"
             app:image_src="@drawable/map"
             app:text="@string/km_so_far"/>
-        <org.hitchhikify.Tile
+        <org.hitchhikify.ui.Tile
             android:id="@+id/cars_travelled_tile"
             android:layout_rowWeight="1"
             android:layout_columnWeight="1"
@@ -68,7 +68,7 @@
             android:layout_height="0dp"
             app:image_src="@drawable/car"
             app:text="@string/cars_so_far"/>
-        <org.hitchhikify.Tile
+        <org.hitchhikify.ui.Tile
             android:id="@+id/current_trip_duration_tile"
             android:layout_rowWeight="1"
             android:layout_columnWeight="1"
@@ -76,7 +76,7 @@
             android:layout_height="0dp"
             app:image_src="@drawable/timer"
             app:text="@string/current_trip_duration"/>
-        <org.hitchhikify.Tile
+        <org.hitchhikify.ui.Tile
             android:id="@+id/average_speed_tile"
             android:layout_rowWeight="1"
             android:layout_columnWeight="1"

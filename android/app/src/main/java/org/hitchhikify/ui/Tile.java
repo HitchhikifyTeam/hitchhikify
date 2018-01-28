@@ -1,4 +1,4 @@
-package org.hitchhikify;
+package org.hitchhikify.ui;
 
 import android.content.Context;
 import android.content.res.TypedArray;
@@ -9,6 +9,8 @@ import android.view.View;
 import android.widget.ImageView;
 import android.widget.LinearLayout;
 import android.widget.TextView;
+
+import org.hitchhikify.R;
 
 /**
  * Created by hlib on 28.01.18.

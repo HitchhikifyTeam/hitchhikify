@@ -53,28 +53,28 @@
         android:columnCount="2"
         grid:alignmentMode="alignBounds">
 
-        <org.hitchhikify.Tile
+        <org.hitchhikify.ui.Tile
             android:layout_rowWeight="1"
             android:layout_columnWeight="1"
             android:layout_width="0dp"
             android:layout_height="0dp"
             app:image_src="@drawable/map"
             app:text="1200 km"/>
-        <org.hitchhikify.Tile
+        <org.hitchhikify.ui.Tile
             android:layout_rowWeight="1"
             android:layout_columnWeight="1"
             android:layout_width="0dp"
             android:layout_height="0dp"
             app:image_src="@drawable/car"
             app:text="56 cars"/>
-        <org.hitchhikify.Tile
+        <org.hitchhikify.ui.Tile
             android:layout_rowWeight="1"
             android:layout_columnWeight="1"
             android:layout_width="0dp"
             android:layout_height="0dp"
             app:image_src="@drawable/timer"
             app:text="278 hours"/>
-        <org.hitchhikify.Tile
+        <org.hitchhikify.ui.Tile
             android:layout_rowWeight="1"
             android:layout_columnWeight="1"
             android:layout_width="0dp"

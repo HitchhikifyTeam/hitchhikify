@@ -20,7 +20,7 @@
             </intent-filter>
         </activity>
 
-        <activity android:name=".WaitingActivity"
+        <activity android:name=".ui.WaitingActivity"
             android:label="Hitchhikify"
             android:screenOrientation="fullSensor">
         </activity>

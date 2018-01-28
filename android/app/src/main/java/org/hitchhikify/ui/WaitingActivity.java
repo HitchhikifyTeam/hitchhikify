@@ -1,4 +1,4 @@
-package org.hitchhikify;
+package org.hitchhikify.ui;
 
 import android.content.Context;
 import android.content.Intent;
@@ -7,6 +7,8 @@ import android.os.Bundle;
 import android.support.annotation.Nullable;
 import android.support.v7.app.AppCompatActivity;
 import android.widget.TextView;
+
+import org.hitchhikify.R;
 
 /**
  * Created by hlib on 28.01.18.
