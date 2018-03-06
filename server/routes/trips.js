@@ -5,7 +5,7 @@ let pg = require('pg');
 let dao = require('../model/dao');
 
 /* GET users listing. */
-router.get('/trip/:trip_id', function(req, res, next) {
+router.get('/:trip_id', function(req, res, next) {
     dao.getTrip(req.params.trip_id, function(trip) {
         res.json(trip);
     }, function (err) {
