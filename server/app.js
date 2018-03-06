@@ -22,8 +22,10 @@ app.use(bodyParser.urlencoded({ extended: false }));
 app.use(cookieParser());
 app.use(express.static(path.join(__dirname, 'public')));
 
-app.use('/', index);
-app.use('/trips', trips);
+var apiVersion = 'v1.0';
+var basePath = '/api/' + apiVersion;
+app.use(basePath, index);
+app.use(basePath + '/trips', trips);
 
 // catch 404 and forward to error handler
 app.use(function(req, res, next) {
